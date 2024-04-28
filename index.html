@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.js Bar Chart Example</title>
+    <script type="module" src="https://d3js.org/d3.v7.min.js" defer></script>    
+    <style>
+        .added {
+            border: 1px solid green;
+        }
+        .redundant {
+            border: 1px solid red;
+        }
+        div {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- <svg id="chart" width="400" height="200"></svg>
+    <ul></ul> -->
+    <div style="margin-bottom: 10px;">
+        <button name="bubbleSort" onclick="handleAlgorithmButtonClick(this);">Bubble Sort</button>
+        <button name="insertionSort" onclick="handleAlgorithmButtonClick(this);">Insertion Sort</button>
+        <button name="selectionSort" onclick="handleAlgorithmButtonClick(this);">Selection Sort</button>
+        <button name="shellSort" onclick="handleAlgorithmButtonClick(this);">Shell Sort</button>
+        <button name="mergeSort" onclick="handleAlgorithmButtonClick(this);">Merge Sort</button>
+        <button name="quickSort" onclick="handleAlgorithmButtonClick(this);">Quick Sort</button>
+        <button name="heapSort" onclick="handleAlgorithmButtonClick(this);">Heap Sort</button>
+        <button name="sort">Sort</button>
+        Time Taken <span id="minutes"></span>:<span id="seconds"></span>
+    </div>
+    <div id="dataviz"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>    
+    <script src="app.js" defer></script>
+    <script src="bubble_sort.js"></script>
+    <script src="bubbleWorker.js"></script>
+    <script src="insertion_sort.js"></script>
+    <script src="selection_sort.js"></script>
+    <script src="shell_sort.js"></script>
+    <script src="merge_sort.js"></script>
+    <script src="quick_sort.js"></script>
+    <script src="heap_sort.js"></script>
+</body>
+</html>
